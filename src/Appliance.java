@@ -15,5 +15,13 @@ public class Appliance {
 	public double dailyEnergy() {
 		return (power * hours * quantity) / 100;
 	}
+	
+	
+	//getters
+
+	public String getName() { return name; }
+	public double getPower() { return power; }
+	public int getQty() { return quantity; }
+	public int getHours() { return hours; }
 
 }
