@@ -14,29 +14,41 @@ public class UserInput {
 	
 	
 	//getting int
-	public static int getInt(String message) {
-		System.out.print(message);
-		while(true) {
-			try {
-				return Integer.parseInt(scan.nextLine());
-			}catch(NumberFormatException e){
-				System.out.println("Please enter a valid integer");
-			}
-		}
-		
-	}
+	 public static int getInt(String message) {
+	        System.out.print(message);
+	        while (true) {
+	            try {
+	                int value = Integer.parseInt(scan.nextLine());
+	                if (value < 0) {
+	                    System.out.println("Please enter a non-negative number.");
+	                    System.out.print(message);
+	                    continue;
+	                }
+	                return value;
+	            } catch (NumberFormatException e) {
+	                System.out.println("Please enter a valid number.");
+	                System.out.print(message);
+	            }
+	        }
+	    }
 	
 	//getting double
-	public static double getDouble(String message) {
-		System.out.print(message);
-		while(true) {
-			try {
-				return Double.parseDouble(scan.nextLine());
-			}catch(NumberFormatException e){
-				System.out.println("Please enter a valid number");
-			}
-		}
-		
-	}
+	 public static double getDouble(String message) {
+	        System.out.print(message);
+	        while (true) {
+	            try {
+	                double value = Double.parseDouble(scan.nextLine());
+	                if (value < 0) {
+	                    System.out.println("Please enter a non-negative number.");
+	                    System.out.print(message);
+	                    continue;
+	                }
+	                return value;
+	            } catch (NumberFormatException e) {
+	                System.out.println("Please enter a valid number.");
+	                System.out.print(message);
+	            }
+	        }
+	    }
 
 }

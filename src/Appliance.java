@@ -13,9 +13,8 @@ public class Appliance {
 	}
 	
 	public double dailyEnergy() {
-		return (power * hours * quantity) / 100;
+	    return power * hours * quantity;  
 	}
-	
 	
 	//getters
 
