@@ -1,4 +1,4 @@
-☀️ Solar Power System Calculator (Java)
+**☀️ Solar Power System Calculator (Java)**
 
 A Java-based console application that calculates the required solar power system specifications based on user input.
 
@@ -88,17 +88,7 @@ Charge Controller (A) = Required Panel Power / System Voltage
 
 All results are rounded to two decimal places.
 
-📂 Repository Structure
-SolarPowerSystemCalculator/
-│
-├── src/                           # Java source code
-│   ├── Main.java                  # Program entry point
-│   ├── Appliance.java             # Appliance data model
-│   ├── Calculator.java            # Solar calculation logic
-│
-├── SolarPowerSystemCalculator.jar  # Executable file
-│
-└── README.md
+
 ▶️ How to Run the Program
 ✅ Option 1: Run the Executable JAR (Recommended)
 
